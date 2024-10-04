@@ -4,42 +4,121 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TecBlog - o seu blog de Tecnologia</title>
-    <link rel="stylesheet" type="text/css" href="css/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="estiloindex.css" />
     <meta name="autor" content="Felipe R. Bucci & Paola Emanuelly Costa da Silva" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 20px;
+      }
+
+      header {
+        background: rgb(0, 0, 0);
+        color: white;
+        padding: 10px 0;
+        text-align: center;
+      }
+
+      h1 {
+        margin: 0;
+      }
+
+      main {
+        margin-top: 20px;
+      }
+
+      h2 {
+        color: #333;
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      li {
+        background: white;
+        margin: 10px 0;
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      button {
+        position: fixed;
+        left: 46%;
+        right: 46%;
+      }
+
+      #area-menu a {
+        margin: 0 15px;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      #area-menu a:hover {
+        color: #f4f4f4;
+        text-decoration: underline;
+      }
+
+      #area-postagens img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      #rodape {
+        text-align: center;
+        padding: 10px;
+        background: rgb(0, 0, 0);
+        color: white;
+        margin-top: 20px;
+      }
+    </style>
   </head>
   <body>
-    <div id="area-cabecalho">
+    <header>
       <div id="area-logo">
-        <h1>Tec<span class="branco">Blog</span></h1>
+        <h1>Tec<span style="color: #f4f4f4;">Blog</span></h1>
       </div>
-      <div id="area-menu">
+      <nav id="area-menu">
         <a href="index.html">Home</a>
         <a href="jogos.html">Jogos</a>
         <a href="celulares.html">Celulares</a>
         <a href="informatica.html">Informática</a>
         <a href="eletronicos.html">Eletrônicos</a>
-      </div>
-      <!-- <div> -->
-    </div>
-    <div id="area-principal">
-      <div id="area-postagens">
-        <!--abertura postagem-->
+      </nav>
+    </header>
+
+    <main id="area-principal">
+      <section id="area-postagens">
         <div class="postagem">
           <h2>Título da postagem 1</h2>
-          <span>postado em 24 de julho</span>
-          <img width="620px" src="imagens/imagem1.jpg" alt="" />
+          <span>Postado em 24 de julho</span>
+          <img src="imagens/imagem1.jpg" alt="Imagem ilustrativa" />
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
             ipsa rerum, quis dolores consequatur pariatur corrupti deleniti non!
             Soluta quae fugiat error facere iure obcaecati nesciunt quasi iusto
             voluptas deleniti.
           </p>
-          <a id="leia" href="">Leia Mais</a>
+          <a id="leia" href="#">Leia Mais</a>
         </div>
-        <!--fechamento da postagem-->
-      </div>
-      <div id="area-lateral">menu lateral</div>
-      <div id="rodape">Todos os direitos reservados</div>
-    </div>
+      </section>
+
+      <aside id="area-lateral">
+        <ul>
+          <li>Postagem mais recente</li>
+          <li>Destaques da semana</li>
+          <li>Assuntos populares</li>
+        </ul>
+      </aside>
+    </main>
+
+    <footer id="rodape">
+      Todos os direitos reservados - TecBlog 2024
+    </footer>
   </body>
 </html>
